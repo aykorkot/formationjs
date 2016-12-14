@@ -1,31 +1,77 @@
-
-
 <!DOCTYPE HTML>
 <html>
 
 	<head>
 
-		<title>Exercices JS</title>
-
-		<script type="text/javascript" src="js/scripts.js"></script> 
+		<title>FORMATION JQUERY</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		
+		
+		
 
 	</head>
 
+
+
+
 <body>
- 
 
-<!--
-<input type="text" id="i1">
 
-<button onclick="fct1()" value="afficher">Afficher une alerte</button>
+<button><a href="#" id="lien1" onclick="message()">Afficher une alerte</a></button>
 
+<button><a href="#" id="lien2" onclick="confirmation()">Demander une confirmation</a></button>
+
+<button><a href="#" onclick="addition()">Calculer la somme X+10</a></button>
+
+<button><a href="#" onclick="calculer(5,7)">Calculer</a></button>
+
+<button><a href="#" onclick="var tab = [14,6]; calculetab(tab);">Calculer le tableau</a></button>
+
+<button><a href="#" onclick="filtrerpair()">Filtrer les nombres pairs</a></button>
+
+<button><a href="#" onclick="tableaumulti()">tableau multi dimensions</a></button>
+
+
+
+<h3 class="listemenu">
+	<a href="#">Menu 1</a>
+</h3>
+<div class="sousmenu">
+	<ul>
+		<li>lien1</li>
+		<li>lien2</li>
+		<li>lien3</li>
+		<li>lien4</li>
+	</ul>
+</div>
+
+<h3 class="listemenu">
+	<a href="#">Menu 2</a>
+</h3>
+<div class="sousmenu">
+	<ul>
+		<li>lien1</li>
+		<li>lien2</li>
+		<li>lien3</li>
+		<li>lien4</li>
+	</ul>
+</div>
+
+
+
+<input type="text" id="id1">
+<button onclick="fct1()" value="afficher">Récupérer</button>
 <input type="text" id="i2">
--->
+<br/><br/>
 
 
 <input type="text" id="i1">
 
-<button onclick="ajoutliste()" value="ajout">Ajouter � la liste</button>
+<button onclick="ajoutliste()">Ajouter à la liste</button>
 
 <ul id="listes">
 
@@ -34,6 +80,14 @@
 
 
 
+<input type="text" id="iden1" value="Rechercher" class="placeholder">
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script> 
+<script type="text/javascript" src="js/scripts.js"></script>  
 </body>
 
 
