@@ -140,7 +140,7 @@ function factorielle (nombre)
 
 
 function fct1() {
-    var text1 = document.getElementById("i1").value;
+    var text1 = document.getElementById("id1").value;
 	var decouper = text1.split("");
 	var carac = "";
 	
@@ -156,10 +156,11 @@ function fct1() {
 }
 
 
+
 function ajoutliste() {
 
     var inp = document.getElementById("i1").value;
-console.log(inp);
+
 	var li = document.createElement("li");
 
 	var textnode = document.createTextNode(inp);
@@ -178,9 +179,9 @@ $(document).ready(function(){
 
 	$("#iden1").focus(function(){
 
-	    if ($(this).attr("value") == "Rechercher")
+	    if ($(this).val() == "Rechercher")
 	    {
-	    	$(this).attr("value", "");
+	    	$(this).val("");
 
 	    }
 
@@ -195,11 +196,7 @@ $(document).ready(function(){
 
 	$("#iden1").blur(function(){
 
-	    if ($(this).attr("value") == ""){
-
-	       $(this).attr("value","Rechercher");
-
-	    }
+	  $(this).val("Rechercher");
 
 	 	if (!$(this).hasClass("placeholder")) {
 
